@@ -8,7 +8,78 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <style>
-        
+        body {
+            background-image: url("assets/images/concrete-texture.png");
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5em;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        div, form {
+            font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 15px;
+            color: #4aaaa5;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: right;
+            padding: 10px;
+            background-color: #666666;
+            border-top: 3px solid #4aaaa5;
+            color: white;
+        }
+
+        .main-area {
+            background-color: #ffffff;
+            color: #777777;
+            clear: both;
+            margin-bottom: 80px;
+            width: 960px;
+            padding: 15px;
+        }
+
+        .navbar {
+            background-color: #ffffff !important;
+            z-index: 3;
+            width: 100%;
+            border-bottom:  1px solid #dddddd;
+        }
+
+        #navbarNav {
+            text-align: right;
+            background-color: #ffffff;
+            border-color: #cccccc;
+            color: #777777;
+            position: absolute !important;
+            right: 15% !important;
+            top: 25%;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-size: 36px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #4aaaa5;
+            margin-top: 0 auto !important;
+            margin-left: 15%;
+            padding: 12px;
+            height: 100% !important;
+        }
+
+        .navbar-items {
+            width: 960px;
+        }
     </style>
 
     <title>Eric Galassi</title>
@@ -16,33 +87,51 @@
   <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Eric Galassi</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+            <div class="navbar-items">
+                <a class="navbar-brand" href="#">Eric Galassi</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+        <br>
     
-    <div class="container">
-        <h1>About Me</h1>
-    </div>
-
-    <div class="container-fluid">
-        <img src="assets/images/P5.jpg" height="150px" width="120px" alt="Photo of myself"/>
-        <p>I originally grew up in the San Francisco Bay Area.  I went to college for my undergraduate in biology from UC San Diego, then received my master's degree in marine biology from San Francisco State University.  After a brief career as a biologist, I decided that I would prefer a career that I could take pride in.  I chose to serve in the US Navy as a submarine officer for several years.  I was stationed around the country before separating from the Navy while living in Hawaii.  After leaving the Navy I began working as a recruiter, and then a mortgage loan officer.  When I decided that the field of sales was not my desire, I became a science teacher.  I taught high school chemistry and physics.</p>
-        <p>I currently live in Texas with my wife and son.  My hobbies include baking, archery, and designing websites, but most of my time is enjoyed with my family.</p>
+    <div class="main-area container">
+        <div class="row">
+            <h1>About Me</h1>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="assets/images/P5.jpg" height="150px" width="120px" alt="Photo of myself"/>
+            </div>
+            <div class="col-md-10">
+                <p>I originally grew up in the San Francisco Bay Area.  I went to college for my undergraduate in biology from UC San Diego, then received my master's degree in marine biology from San Francisco State University.  After a brief career as a biologist, I decided that I would prefer a career that I could take pride in.  I chose to serve in the US Navy as a submarine officer for several years.  I was stationed around the country before separating from the Navy while living in Hawaii.  After leaving the Navy I began working as a recruiter, and then a mortgage loan officer.  When I decided that the field of sales was not my desire, I became a science teacher.  I taught high school chemistry and physics.</p>
+            </div>
+        </div>
+        <div class="row">
+            <p>I currently live in Texas with my wife and son.  My hobbies include baking, archery, and designing websites, but most of my time is enjoyed with my family.</p>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -51,4 +140,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
+    <footer>
+        <div>2018</div>
+    </footer>
 </html>
