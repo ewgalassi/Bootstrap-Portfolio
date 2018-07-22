@@ -64,9 +64,6 @@
             background-color: #ffffff;
             border-color: #cccccc;
             color: #777777;
-            position: absolute !important;
-            right: 15% !important;
-            top: 25%;
         }
 
         .navbar-brand {
@@ -74,8 +71,6 @@
             font-size: 36px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             background-color: #4aaaa5;
-            margin-top: 0 auto !important;
-            margin-left: 15%;
             padding: 12px;
             height: 100% !important;
         }
@@ -88,13 +83,13 @@
   </head>
   <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-around">
             <div class="navbar-items">
-                <a class="navbar-brand" href="#">Eric Galassi</a>
+                <a class="navbar-brand float-left" href="#">Eric Galassi</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end mt-3" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">About </a>
